@@ -31,7 +31,7 @@ if (!isProduction) {
 }
 
 if(isProduction){
-  mongoose.connect(process.env.MONGODB_URI);
+  mongoose.connect('mongodb://conduit:thinkster@ds133241.mlab.com:33241/myconduit');
 } else {
   mongoose.connect('mongodb://conduit:thinkster@ds133241.mlab.com:33241/myconduit');
   mongoose.set('debug', true);
